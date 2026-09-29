@@ -26,11 +26,15 @@
     <meta name="twitter:card" content="summary_large_image" />
 
     <!-- أيقونة الموقع (Favicon) -->
-    <link rel="icon" type="image/png" href="assets/favicon.png?v=2" />
-    <link rel="apple-touch-icon" href="assets/favicon.png?v=2" />
+    <link rel="icon" type="image/png" href="assets/favicon.png?v=3" />
+    <link rel="apple-touch-icon" href="assets/favicon.png?v=3" />
 
     <!-- ملف تعريف للـ AI (مسار نسبي) -->
     <link rel="alternate" type="text/plain" href="llms.txt" title="Marco Sawiris AI profile" />
+
+    <!-- تحميل مبكر لأهم عناصر أول الشاشة -->
+    <link rel="preload" as="image" href="assets/Marco.Sawiris-Hero-Portrait-03.webp" fetchpriority="high" />
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/Montserrat-VariableFont_wght.woff2" crossorigin />
 
     <!-- الستايلات -->
     <link rel="stylesheet" href="styles.css" />
@@ -67,7 +71,7 @@
           "@type": "ProfilePage",
           "url": "https://marco-sawiris.github.io/",
           "name": "Marco Sawiris — Senior Graphic Designer | Branding, Social Media & Motion Graphics",
-          "dateModified": "2026-09-22",
+          "dateModified": "2026-09-29T12:00:00+00:00",
           "isPartOf": { "@id": "https://marco-sawiris.github.io/#website" },
           "mainEntity": {
             "@type": "Person",
@@ -145,11 +149,11 @@
             muted
             playsinline
             preload="metadata"
-            poster="assets/Marco.Sawiris-Hero-Portrait-03.png"
+            poster="assets/Marco.Sawiris-Hero-Portrait-03.webp"
             aria-label="Animated portrait of Marco Sawiris"
           >
             <source
-              src="assets/Marco.Sawiris-Hero-Video-02.mp4"
+              src="assets/Marco.Sawiris-Hero-Video-02-web.mp4"
               type="video/mp4"
             />
           </video>
