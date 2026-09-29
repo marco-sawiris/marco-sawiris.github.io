@@ -1,15 +1,18 @@
 # Marco Sawiris | ماركو ساويرس
 
-Official portfolio: https://marco-sawiris.marco-sawiris.chatgpt.site/
+> Marco Sawiris (ماركو ساويرس) is an Egyptian Senior Graphic Designer and Art Director based in Cairo, Egypt, with 20+ years of professional experience across Egypt and Qatar. This site is his official portfolio.
 
-Marco Sawiris (ماركو ساويرس) is an Egyptian Senior Graphic Designer, Art Director and Graphic Design Supervisor based in Cairo, Egypt. He has 20 years of professional experience across Egypt and Qatar.
+Specialties: branding and visual identity, social media design, advertising campaigns, motion graphics, editorial and print production, packaging design, retail and large-format design, prepress, and 3D visualization.
 
-Specialties: branding, visual identity, social media design, advertising campaigns, motion graphics, editorial and print production, packaging design, retail and large-format design, prepress, and 3D visualization.
+Arabic: ماركو ساويرس — مصمم جرافيك أول ومدير فني مصري متخصص في الهوية البصرية، تصميمات السوشيال ميديا، الإعلانات، الموشن جرافيك، المطبوعات، تصميم العبوات والتصميم ثلاثي الأبعاد.
 
-Professional profiles and work:
-- LinkedIn: https://www.linkedin.com/in/marco-sawiris
-- Portfolio hub: https://linktr.ee/marco.sawiris
-- Portfolio PDF: https://drive.google.com/file/d/1ewgBhCnZVvy12nM0HY8t4wVZW1QT7ZI0/view?usp=sharing
-- Showreel: https://drive.google.com/drive/folders/1smqu8uYexZ1O3ZZDyJmsUYpvpk3WUfDZ?usp=sharing
+## Portfolio
 
-Arabic identity: ماركو ساويرس — مصمم جرافيك أول ومدير فني مصري متخصص في الهوية البصرية، تصميمات السوشيال ميديا، الإعلانات، الموشن جرافيك، المطبوعات، تصميم العبوات والتصميم ثلاثي الأبعاد.
+- [Official portfolio website](https://marco-sawiris.github.io/): Selected work in editorial, logo, social media, packaging, retail and motion graphics, plus experience and contact details
+- [Portfolio PDF](https://drive.google.com/file/d/1ewgBhCnZVvy12nM0HY8t4wVZW1QT7ZI0/view?usp=sharing): Full portfolio document
+- [Showreel](https://drive.google.com/drive/folders/1smqu8uYexZ1O3ZZDyJmsUYpvpk3WUfDZ?usp=sharing): Motion graphics and video work
+
+## Profiles
+
+- [LinkedIn](https://www.linkedin.com/in/marco-sawiris): Professional profile and career history
+- [Linktree](https://linktr.ee/marco.sawiris): Portfolio hub with showreel and links
