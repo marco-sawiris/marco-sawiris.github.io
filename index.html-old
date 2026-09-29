@@ -3,46 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#102044" />
 
     <!-- العنوان اللي هيظهر في جوجل -->
-    <title>Marco Sawiris | Senior Graphic Designer &amp; Art Director</title>
+    <title>Marco Sawiris | Senior Graphic Designer & Art Director</title>
 
     <!-- الوصف اللي هيظهر في نتائج البحث -->
     <meta name="description" content="I'm Marco Sawiris, a Senior Graphic Designer and Art Director creating commercially effective brand identities, campaigns, social content, and motion graphics." />
     <meta name="author" content="Marco Sawiris" />
-    <link rel="canonical" href="https://marco-sawiris.github.io/portfolio/" />
 
     <!-- كود إثبات ملكية جوجل -->
     <meta name="google-site-verification" content="nOoADdu4auPwFT-9pPtDizTC8DgS2HjKHj9ZoH5v5hw" />
 
-    <!-- المشاركة على واتساب / لينكدإن / فيسبوك / تويتر -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Marco Sawiris" />
-    <meta property="og:title" content="Marco Sawiris | Senior Graphic Designer &amp; Art Director" />
-    <meta property="og:description" content="Commercially effective brand identities, campaigns, social content, and motion graphics." />
-    <meta property="og:url" content="https://marco-sawiris.github.io/portfolio/" />
-    <meta property="og:image" content="https://marco-sawiris.github.io/portfolio/assets/Marco.Sawiris-Hero-Portrait-03.png" />
-    <meta name="twitter:card" content="summary_large_image" />
+  <!-- أيقونة الموقع (Favicon) -->
+  <link rel="icon" type="image/png" sizes="192x192" href="https://marco-sawiris.github.io/portfolio/assets/favicon.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="https://marco-sawiris.github.io/portfolio/assets/favicon.png" />
+  <link rel="apple-touch-icon" href="https://marco-sawiris.github.io/portfolio/assets/favicon.png" />
 
-    <!-- أيقونة الموقع (Favicon) -->
-    <link rel="icon" type="image/png" sizes="192x192" href="https://marco-sawiris.github.io/portfolio/assets/favicon.png" />
-    <link rel="icon" type="image/png" sizes="48x48" href="https://marco-sawiris.github.io/portfolio/assets/favicon.png" />
-    <link rel="apple-touch-icon" href="https://marco-sawiris.github.io/portfolio/assets/favicon.png" />
-
-    <!-- ملف تعريف للـ AI (مسار نسبي عشان يشتغل جوه /portfolio/) -->
-    <link rel="alternate" type="text/plain" href="llms.txt" title="Marco Sawiris AI profile" />
-
-    <!-- الستايلات -->
+  <!-- تعريف اسم الموقع لجوجل -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Marco Sawiris",
+    "url": "https://marco-sawiris.github.io/portfolio/"
+  }
+  </script>
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="Marco Sawiris AI profile" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="experience-v19.css?v=47" />
-    <style>
-      .showreel .section-head .eyebrow,
-      .showreel .section-head > p { color: #102044; }
-    </style>
-
-    <!-- السكريبتات (defer: بتشتغل بنفس الترتيب بعد تحميل الصفحة) -->
     <script defer src="motion.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": "https://marco-sawiris-portfolio.marco-sawiris.chatgpt.site/",
+        "name": "Marco Sawiris — Senior Graphic Designer | Branding, Social Media & Motion Graphics",
+        "dateModified": "2026-09-22",
+        "mainEntity": {
+          "@type": "Person",
+          "@id": "https://marco-sawiris-portfolio.marco-sawiris.chatgpt.site/#marco-sawiris",
+          "name": "Marco Sawiris",
+          "alternateName": ["ماركو ساويرس", "Marco Sawires"],
+          "url": "https://marco-sawiris-portfolio.marco-sawiris.chatgpt.site/",
+          "jobTitle": [
+            "Senior Graphic Designer",
+            "Art Director",
+            "Graphic Design Supervisor"
+          ],
+          "description": "Egyptian Senior Graphic Designer with 20+ years of experience in branding, social media, motion graphics, print production, packaging and 3D visualization.",
+          "knowsLanguage": ["Arabic", "English"],
+          "homeLocation": { "@type": "Place", "name": "Cairo, Egypt" },
+          "sameAs": [
+            "https://www.linkedin.com/in/marco-sawiris",
+            "https://linktr.ee/marco.sawiris"
+          ]
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <link rel="stylesheet" href="experience-v19.css?v=47" />
     <script defer src="logos-v1.js?v=5"></script>
     <script defer src="social-v1.js?v=12"></script>
     <script defer src="packaging-v1.js?v=3"></script>
@@ -51,49 +70,6 @@
     <script defer src="experience-v19.js"></script>
     <script defer src="portfolio-toggle.js?v=8"></script>
     <script defer src="artwork-protection.js?v=3"></script>
-
-    <!-- بيانات منظمة لجوجل: كيان واحد متسق على نفس الدومين -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://marco-sawiris.github.io/portfolio/#website",
-          "name": "Marco Sawiris",
-          "url": "https://marco-sawiris.github.io/portfolio/"
-        },
-        {
-          "@type": "ProfilePage",
-          "url": "https://marco-sawiris.github.io/portfolio/",
-          "name": "Marco Sawiris — Senior Graphic Designer | Branding, Social Media & Motion Graphics",
-          "dateModified": "2026-09-22",
-          "isPartOf": { "@id": "https://marco-sawiris.github.io/portfolio/#website" },
-          "mainEntity": {
-            "@type": "Person",
-            "@id": "https://marco-sawiris.github.io/portfolio/#marco-sawiris",
-            "name": "Marco Sawiris",
-            "alternateName": ["ماركو ساويرس", "Marco Sawires"],
-            "url": "https://marco-sawiris.github.io/portfolio/",
-            "jobTitle": [
-              "Senior Graphic Designer",
-              "Art Director",
-              "Graphic Design Supervisor"
-            ],
-            "description": "Egyptian Senior Graphic Designer with 20+ years of experience in branding, social media, motion graphics, print production, packaging and 3D visualization.",
-            "knowsLanguage": ["Arabic", "English"],
-            "homeLocation": { "@type": "Place", "name": "Cairo, Egypt" },
-            "sameAs": [
-              "https://www.linkedin.com/in/marco-sawiris",
-              "https://linktr.ee/marco.sawiris"
-            ]
-          }
-        }
-      ]
-    }
-    </script>
-  </head>
-  <body>
     <nav class="nav">
       <div class="wrap nav-inner">
         <a class="mark" href="#top">MARCO SAWIRIS</a>
@@ -136,7 +112,7 @@
           </div>
         </div>
         <div class="hero-art">
-          <strong role="img" aria-label="Portfolio"
+          <strong aria-label="Portfolio"
             ><span class="port">PORT</span
             ><span class="folio">FOLIO</span></strong
           ><video
@@ -211,7 +187,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-02-Valuable-Archaeological-Collection.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-02-Valuable-Archaeological-Collection.jpg"
                 alt="Valuable Archaeological Collection book cover"
               />
@@ -237,7 +213,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-01-Amiri-Gems.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-01-Amiri-Gems.jpg"
                 alt="Amiri Gems jewelry catalog"
               />
@@ -263,7 +239,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-03-Gulf-Builders.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-03-Gulf-Builders.jpg"
                 alt="Gulf Builders construction company profile"
               />
@@ -289,7 +265,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-04-Al-Sawari-Bright-Light.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-04-Al-Sawari-Bright-Light.jpg"
                 alt="Al-Sawari Bright Light real estate company profile"
               />
@@ -315,7 +291,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-05-Volt-Craft-Contracting.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-05-Volt-Craft-Contracting.jpg"
                 alt="Volt Craft Contracting company profile"
               />
@@ -341,7 +317,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-06-Energy-Awards-Dinner-Menu.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-06-Energy-Awards-Dinner-Menu.jpg"
                 alt="Energy Awards dinner menu"
               />
@@ -367,7 +343,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-07-Jazeera-Paints-Price-List.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-07-Jazeera-Paints-Price-List.jpg"
                 alt="Jazeera Paints price list catalog"
               />
@@ -393,7 +369,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-08-Jazeera-Cement-Products.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-08-Jazeera-Cement-Products.jpg"
                 alt="Jazeera Cement Products catalog"
               />
@@ -419,7 +395,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-09-Qatar-Trade-Conference.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-09-Qatar-Trade-Conference.jpg"
                 alt="Qatar Trade Conference magazine"
               />
@@ -445,7 +421,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-10-Hadu-Projects.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-10-Hadu-Projects.jpg"
                 alt="Hadu Projects gift catalog"
               />
@@ -471,7 +447,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-11-Shell-World-Qatar.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-11-Shell-World-Qatar.jpg"
                 alt="Shell World Qatar corporate magazine"
               />
@@ -497,7 +473,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-12-North-Oil-Company.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-12-North-Oil-Company.jpg"
                 alt="North Oil Company corporate brochure"
               />
@@ -523,7 +499,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-13-Shop-Qatar.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-13-Shop-Qatar.jpg"
                 alt="Shop Qatar retail and lifestyle magazine"
               />
@@ -549,7 +525,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-14-Idea-Notebook.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-14-Idea-Notebook.jpg"
                 alt="Idea Notebook entrepreneurship cover"
               />
@@ -575,7 +551,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-15-QSRTC-Outreach-2015.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-15-QSRTC-Outreach-2015.jpg"
                 alt="QSRTC Outreach publication"
               />
@@ -601,7 +577,7 @@
               href="assets/editorial/Marco.Sawiris-Editorial-Print-16-Corporate-Profile-Qatar.jpg"
               target="_blank"
               rel="noopener"
-              ><img loading="lazy" decoding="async"
+              ><img
                 src="assets/editorial/Marco.Sawiris-Editorial-Print-16-Corporate-Profile-Qatar.jpg"
                 alt="Qatar real estate corporate profile"
               />
@@ -628,10 +604,10 @@
         <div class="wrap">
           <div class="section-head">
             <div>
-              <div class="eyebrow">Showreel</div>
+              <div class="eyebrow" style="color: #102044">Showreel</div>
               <h2>Motion in action.</h2>
             </div>
-            <p>
+            <p style="color: #102044">
               Open any video from the live showreel gallery below, or view the
               full collection through my Showreel &amp; Links page.
             </p>
@@ -641,7 +617,6 @@
               src="https://drive.google.com/embeddedfolderview?id=1smqu8uYexZ1O3ZZDyJmsUYpvpk3WUfDZ#grid"
               title="Marco Sawiris showreel video gallery"
               loading="lazy"
-              allow="fullscreen"
             ></iframe>
           </div>
           <a
@@ -712,6 +687,32 @@
           </div>
         </div>
       </section>
+      <section id="contact">
+        <div class="wrap contact">
+          <h2>Let’s create<br /><span>work that connects.</span></h2>
+          <div class="contact-links">
+            <a
+          href="https://drive.google.com/file/d/1ewgBhCnZVvy12nM0HY8t4wVZW1QT7ZI0/view?usp=sharing"
+          target="_blank"
+          rel="noopener"
+          >view Full Portfolio <span>↗</span></a
+            ><a
+              href="https://linktr.ee/marco.sawiris"
+              target="_blank"
+              rel="noopener"
+              >Showreel &amp; Links <span>↗</span></a
+            ><a
+              href="https://www.linkedin.com/in/marco-sawiris"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn Profile <span>↗</span></a
+            ><a href="mailto:mmalgy@gmail.com">Email Me <span>↗</span></a
+            ><a href="https://wa.me/201200076519" target="_blank" rel="noopener"
+              >WhatsApp Me <span>↗</span></a
+            >
+          </div>
+        </div>
+      </section>
       <section id="about">
         <div class="wrap about-grid">
           <div>
@@ -743,37 +744,11 @@
           </div>
         </div>
       </section>
-      <section id="contact">
-        <div class="wrap contact">
-          <h2>Let’s create<br /><span>work that connects.</span></h2>
-          <div class="contact-links">
-            <a
-          href="https://drive.google.com/file/d/1ewgBhCnZVvy12nM0HY8t4wVZW1QT7ZI0/view?usp=sharing"
-          target="_blank"
-          rel="noopener"
-          >View Full Portfolio <span>↗</span></a
-            ><a
-              href="https://linktr.ee/marco.sawiris"
-              target="_blank"
-              rel="noopener"
-              >Showreel &amp; Links <span>↗</span></a
-            ><a
-              href="https://www.linkedin.com/in/marco-sawiris"
-              target="_blank"
-              rel="noopener"
-              >LinkedIn Profile <span>↗</span></a
-            ><a href="mailto:mmalgy@gmail.com">Email Me <span>↗</span></a
-            ><a href="https://wa.me/201200076519" target="_blank" rel="noopener"
-              >WhatsApp Me <span>↗</span></a
-            >
-          </div>
-        </div>
-      </section>
     </main>
     <footer class="footer">
       <div class="wrap">
         © 2026 Marco Sawiris · Senior Graphic Designer | Branding, Social Media
-        &amp; Motion Graphics · Cairo, Egypt<span
+        & Motion Graphics · Cairo, Egypt<span
           class="arabic-identity"
           lang="ar"
           dir="rtl"
