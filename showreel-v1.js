@@ -28,11 +28,15 @@ const showreelVideos=[
   ['1uiMkpO_8EGIZxLEjwO4rcCOIFXD5V2Wj','Jazeera Paints — VO Script']
 ];
 
+// رقم الفيديو الرئيسي في القايمة فوق (يبدأ من 0). 5 = Reel 02
+const FEATURED_REEL_INDEX=5;
+
 const showreelFrame=document.querySelector('.showreel-frame');
 
 if(showreelFrame){
   showreelFrame.classList.add('custom-showreel');
-  showreelFrame.innerHTML=`<div class="showreel-grid" role="list" aria-label="Motion graphics showreel">${showreelVideos.map(([id,title],index)=>`<button class="video-card" type="button" role="listitem" data-video-id="${id}" data-video-title="${title}" style="--video-index:${index}"><span class="video-thumb"><img src="https://drive.google.com/thumbnail?id=${id}&sz=w500" alt="${title} video thumbnail" loading="lazy"><span class="video-play" aria-hidden="true">▶</span></span><span class="video-title">${title}</span></button>`).join('')}</div>`;
+  const featuredReel=showreelVideos[FEATURED_REEL_INDEX];
+  showreelFrame.innerHTML=`<div class="featured-reel"><button class="featured-reel-btn" type="button" data-video-id="${featuredReel[0]}" aria-label="Play featured video: ${featuredReel[1]}"><img src="https://drive.google.com/thumbnail?id=${featuredReel[0]}&sz=w1280" alt="" width="1280" height="720" loading="lazy"><span class="featured-reel-play" aria-hidden="true">▶</span><span class="featured-reel-title">Featured video · ${featuredReel[1]}</span></button></div><div class="showreel-grid" role="list" aria-label="Motion graphics showreel">${showreelVideos.map(([id,title],index)=>`<button class="video-card" type="button" role="listitem" data-video-id="${id}" data-video-title="${title}" style="--video-index:${index}"><span class="video-thumb"><img src="https://drive.google.com/thumbnail?id=${id}&sz=w500" alt="${title} video thumbnail" loading="lazy"><span class="video-play" aria-hidden="true">▶</span></span><span class="video-title">${title}</span></button>`).join('')}</div>`;
 
   const videoDialog=document.createElement('dialog');
   videoDialog.className='video-dialog';
@@ -50,6 +54,13 @@ if(showreelFrame){
     dialogTitle.textContent=card.dataset.videoTitle;
     player.src=`https://drive.google.com/file/d/${card.dataset.videoId}/preview`;
     videoDialog.showModal();
+  });
+  showreelFrame.addEventListener('click',event=>{
+    const btn=event.target.closest('.featured-reel-btn');
+    if(!btn)return;
+    const box=btn.parentElement;
+    box.innerHTML=`<iframe title="Featured video" src="https://drive.google.com/file/d/${btn.dataset.videoId}/preview" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
+    box.classList.add('is-playing');
   });
   videoDialog.querySelector('.video-dialog-close').addEventListener('click',closeDialog);
   videoDialog.addEventListener('click',event=>{if(event.target===videoDialog)closeDialog()});
