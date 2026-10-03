@@ -57,7 +57,7 @@ function animatePortfolioCard(card,index){
 categoryButtons.forEach(button=>{
   const category=button.dataset.filter;
   const count=category==='social'
-    ? document.querySelectorAll('.campaign-tab').length
+    ? (socialCategoryPanel?socialCategoryPanel.querySelectorAll('.campaign-tab').length:0)
     : category==='motion'?'Selected'
     : category==='retail'?Number(retailCategoryPanel?.dataset.projectCount||0)
     : portfolioCards.filter(card=>card.dataset.category===category).length;
