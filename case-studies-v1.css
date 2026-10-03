@@ -18,3 +18,13 @@
 #about .about-open{color:var(--ink);font-weight:600}
 @media(min-width:851px){#about .about-grid{grid-template-columns:1fr 1fr;gap:72px;align-items:start}#about .about-grid>div:first-child p{max-width:560px;line-height:1.75}}
 @media(max-width:850px){#case-studies{padding:64px 0}.cs-grid{grid-template-columns:1fr}.cs-block{padding:22px}}
+
+/* Hero photo collage (4:5). Replace assets/images/case-study-collage-placeholder.jpg, same name and 1600x2000 */
+.cs-has-collage{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.55fr);grid-template-areas:"head photo" "grid photo" "act photo";column-gap:28px;align-items:start}
+.cs-has-collage:not([hidden]){display:grid}
+.cs-has-collage>.campaign-heading{grid-area:head;grid-template-columns:1fr}
+.cs-has-collage>.cs-grid{grid-area:grid;margin-top:18px}
+.cs-has-collage>.cs-actions{grid-area:act}
+.cs-collage{grid-area:photo;margin:0;aspect-ratio:4/5;overflow:hidden;background:#d6dbe3;border:1px solid var(--line);box-shadow:0 12px 34px rgba(16,32,68,.07)}
+.cs-collage img{width:100%;height:100%;object-fit:cover}
+@media(max-width:850px){.cs-has-collage{grid-template-columns:1fr;grid-template-areas:"head" "photo" "grid" "act"}.cs-has-collage>.cs-grid{margin-top:18px}.cs-collage{margin-top:18px}}

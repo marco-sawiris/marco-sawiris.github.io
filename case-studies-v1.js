@@ -4,7 +4,7 @@ const tabs=[...root.querySelectorAll('.campaign-tab')],panels=[...root.querySele
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const motion=document.documentElement.classList.contains('motion-ready')&&!reduce;
 // same entrance as the hero text (copyRiseStrong): rise + blur-in, staggered
-const parts=p=>[p.querySelector('.campaign-heading'),...p.querySelectorAll('.cs-block'),p.querySelector('.cs-actions')].filter(Boolean);
+const parts=p=>[p.querySelector('.campaign-heading'),p.querySelector('.cs-collage'),...p.querySelectorAll('.cs-block'),p.querySelector('.cs-actions')].filter(Boolean);
 function animate(p){if(!motion)return;parts(p).forEach((el,i)=>{el.animate([{opacity:0,transform:'translateY(65px)',filter:'blur(9px)'},{opacity:1,transform:'none',filter:'none'}],{duration:1000,delay:i*110,easing:'cubic-bezier(.16,1,.3,1)',fill:'both'});el.style.opacity=''})}
 function show(id,fx){
   tabs.forEach(t=>{const on=t.dataset.target===id;t.classList.toggle('is-active',on);t.setAttribute('aria-selected',on)});
