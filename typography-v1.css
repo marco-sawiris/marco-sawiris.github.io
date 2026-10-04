@@ -1,0 +1,25 @@
+/* Unified typography. One font (Montserrat, set globally) and one size scale for all text.
+   Large display headings (hero h1, section h2, stat numbers, campaign titles) keep their own sizes. */
+:root{
+  --fs-title:clamp(1.1rem,1.6vw,1.45rem); /* card / project titles */
+  --fs-sub:1rem;                           /* row titles (roles, company names) */
+  --fs-body:.94rem;                        /* all paragraph text */
+  --fs-ui:.88rem;                          /* menu, skills, dates, captions, footer */
+  --fs-label:.72rem;                       /* eyebrows, kickers, tabs, small caps labels */
+  --lh-body:1.7;
+}
+
+/* Card / project titles */
+.editorial-copy h3,.logo-card .editorial-copy h3,.showreel-copy strong{font-size:var(--fs-title)}
+
+/* Row titles */
+.role strong,.company-heading strong{font-size:var(--fs-sub)}
+
+/* Paragraph text */
+.section-head p,.contact p,#about .about-grid p,.editorial-copy p,.logo-card .editorial-copy p,.campaign-heading p,.cs-block p,.cs-block li{font-size:var(--fs-body);line-height:var(--lh-body)}
+
+/* UI / secondary text */
+.menu a,.skill,#about .skill,.role span,.role time,.company-heading span,.stat span,.showreel-copy span,.footer,.arabic-identity,.cs-note{font-size:var(--fs-ui)}
+
+/* Labels */
+.eyebrow,#about .about-eyebrow,.campaign-kicker,.campaign-tab,.editorial-copy .project-type,.editorial-copy h4,.cs-block h4,.work-card small,.stat small,.project-label span,.filter,.filter-label,.filter-meta,.video-card,.video-title,.video-play{font-size:var(--fs-label)}
