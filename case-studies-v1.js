@@ -6,9 +6,20 @@ const motion=document.documentElement.classList.contains('motion-ready')&&!reduc
 // same entrance as the hero text (copyRiseStrong): rise + blur-in, staggered
 const parts=p=>[p.querySelector('.campaign-heading'),p.querySelector('.cs-collage'),...p.querySelectorAll('.cs-block'),p.querySelector('.cs-actions')].filter(Boolean);
 function animate(p){if(!motion)return;parts(p).forEach((el,i)=>{el.animate([{opacity:0,transform:'translateY(65px)',filter:'blur(9px)'},{opacity:1,transform:'none',filter:'none'}],{duration:1000,delay:i*110,easing:'cubic-bezier(.16,1,.3,1)',fill:'both'});el.style.opacity=''})}
+// Size the collage column per case study so the image (4:5) matches the height of the 2x2 cards as closely as possible
+function fit(p){
+  const grid=p.querySelector('.cs-grid');if(!grid||!p.querySelector('.cs-collage')||p.hidden)return;
+  if(matchMedia('(max-width:850px)').matches){p.style.removeProperty('--collage-w');return}
+  const T=p.clientWidth;let best=null;
+  for(let f=.30;f<=.50;f+=.01){
+    const w=Math.round(T*f);p.style.setProperty('--collage-w',w+'px');
+    const d=Math.abs(w/grid.offsetHeight-.8);if(!best||d<best.d)best={w,d};
+  }
+  p.style.setProperty('--collage-w',best.w+'px');
+}
 function show(id,fx){
   tabs.forEach(t=>{const on=t.dataset.target===id;t.classList.toggle('is-active',on);t.setAttribute('aria-selected',on)});
-  panels.forEach(p=>{const on=p.id===id;p.hidden=!on;if(on&&fx)animate(p)});
+  panels.forEach(p=>{const on=p.id===id;p.hidden=!on;if(on){fit(p);if(fx)animate(p)}});
 }
 tabs.forEach(t=>t.addEventListener('click',()=>show(t.dataset.target,true)));
 show(tabs[0].dataset.target,false);
@@ -18,6 +29,10 @@ if(motion){
   const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){io.disconnect();animate(first)}},{threshold:.15});
   io.observe(first);
 }
+const active=()=>panels.find(p=>!p.hidden);
+let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>active()&&fit(active()),150)});
+document.fonts?.ready.then(()=>active()&&fit(active()));
+addEventListener('load',()=>active()&&fit(active()));
 // "View the designs": open Work > Social Media on the matching campaign tab
 root.querySelectorAll('[data-open-design]').forEach(a=>a.addEventListener('click',e=>{
   e.preventDefault();
